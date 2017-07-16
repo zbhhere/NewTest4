@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu"
+        android:title="主页"
+        android:icon="@android:drawable/dialog_frame"
+        />
+    <item
+        android:id="@+id/mail"
+        android:title="邮箱"
+        android:icon="@android:drawable/stat_notify_more"
+        />
+    <item
+        android:id="@+id/hehe"
+        android:title="分享"
+        android:icon="@android:drawable/ic_media_play"
+        />
+
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        app:titleTextColor="#878585"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+        app:layout_scrollFlags="enterAlways|snap|scroll"/>
+</android.support.design.widget.AppBarLayout>
+    <ScrollView android:layout_width="match_parent"
+                android:layout_weight="0.975"
+                android:layout_height="0dp">
+        <LinearLayout
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/content_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+        <ImageView
+            android:id="@+id/content_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"/>
+       <ListView android:layout_width="match_parent"
+                 android:layout_height="wrap_content">
+
+       </ListView>
+            <LinearLayout android:layout_width="wrap_content"
+                          android:orientation="horizontal"
+                          android:layout_height="wrap_content">
+        <ImageView
+             android:id="@+id/save_btn"
+             android:src="@mipmap/save_img"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/save_view"
+                    android:text="收藏"
+                    android:textSize="15dp"
+                    android:layout_gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+<!--<EditText-->
+    <!--android:background="@drawable/et"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_weight="0.025"-->
+    <!--android:layout_height="30dp"/>-->
+    <include layout="@layout/edit_button"/>
+</LinearLayout>

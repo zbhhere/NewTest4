@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:background="#878585"
+        app:theme="@style/ThemeOverlay.AppCompat.Light"
+       >
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:text="注册新用户"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_tview"
+        android:clickable="true"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/login_btn" android:layout_alignLeft="@+id/otherlogin"
+        android:layout_alignStart="@+id/otherlogin"/>
+
+    <TextView
+        android:text="忘记密码?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView5"
+        android:clickable="true"
+        android:layout_alignBaseline="@+id/register_tview"
+        android:layout_alignBottom="@+id/register_tview"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"/>
+
+    <EditText
+        android:id="@+id/user_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:ems="10"
+        android:hint="用户名"
+        android:inputType="textPersonName"
+        android:layout_above="@+id/pass_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/pass_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:layout_above="@+id/login_btn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:text="登 陆"
+        android:textSize="20dp"
+        android:textColor="#747272"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/shape"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+    <TextView
+        android:id="@+id/otherlogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/login_btn"
+         android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp" android:text="第三方登录"/>
+
+
+</RelativeLayout>
